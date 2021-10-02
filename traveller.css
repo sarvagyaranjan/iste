@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://images.pexels.com/photos/2531237/pexels-photo-2531237.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  margin: 2%;
+  background-color: #000;
+  color: white;
+}
+.background-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 0;
+  /* padding-top: 10px; */
+  border-radius: 10px;
+}
+nav {
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.header {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Architects Daughter", cursive;
+}
+.header:hover {
+  color: #fff;
+}
+.list {
+  font-size: 20px;
+}
+.list a {
+  color: white;
+}
+.list a:hover {
+  color: #000;
+}
+.list a:focus {
+  color: #000;
+}
+
+#destination {
+  text-align: center;
+  padding: 4%;
+  font-family: "Architects Daughter", cursive;
+}
+.grid-container {
+  display: grid;
+  margin: 0 10% 0 10%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+  padding: 2%;
+}
+
+.article img {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.text {
+  text-align: start;
+  line-height: 1.5em;
+}
+
+#btn {
+  color: #000;
+  background-color: aliceblue;
+  border: 1px black;
+  border-radius: 4px;
+  padding: 1%;
+  margin-top: 1%;
+  text-align: start;
+}
+
+#btn:hover {
+  transform: scaleY(10px);
+  background-color: rgb(128, 111, 90);
+  color: #fff;
+}
+
+.contact {
+  text-align: center;
+  padding: 5% 5% 0 5%;
+}
+.link-item {
+  margin: 1%;
+  padding: 2px;
+  font-size: 50px;
+}
+.contact a:hover {
+  text-decoration: none;
+}
+
+#footerpara {
+  padding: 4px;
+  color: rgb(105, 103, 103);
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    margin: 0 10% 0 10%;
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-columns: none;
+    grid-gap: 60px;
+    padding: 1%;
+  }
+  .article img {
+    width: 300px;
+  }
+  .contact {
+    text-align: center;
+    padding: 8% 8% 0 8%;
+  }
+  .link-item {
+    margin: 1%;
+    padding: 2px;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .article img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .article img {
+    width: 250px;
+  }
+  .contact {
+    text-align: center;
+    padding: 8% 8% 0 8%;
+  }
+  .link-item {
+    margin: 1%;
+    padding: 2px;
+    font-size: 40px;
+  }
+  .header {
+    font-size: 25px;
+    color: #fff;
+    font-family: "Architects Daughter", cursive;
+  }
+}
